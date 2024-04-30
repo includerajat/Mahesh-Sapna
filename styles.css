@@ -5,4 +5,32 @@ body {
   letter-spacing: 6px; 
   font-weight: bold;
   text-align: center;
+  background-color: #FDE0DD ;
+}
+
+.image-container {
+  text-align: center; /* Center the image horizontally */
+  margin-top: 20px; /* Adjust spacing between message and image */
+}
+
+.image-container img {
+  max-width: 100%; /* Ensure image fits within its container */
+  height: 80vh;
+}
+
+.image-container img {
+  max-width: 100%; /* Ensure image fits within its container */
+  opacity: 0; /* Initially set opacity to 0 */
+  animation: fadeIn 4s ease-in-out forwards; /* Apply fade-in animation */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Start with fully transparent */
+    transform: scale(0.6); /* Initial scale, adjust as needed */
+  }
+  to {
+    opacity: 1; /* Fade to fully opaque */
+    transform: scale(1.1); /* Final scale, adjust as needed */
+  }
 }
