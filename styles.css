@@ -16,10 +16,6 @@ body {
 .image-container img {
   max-width: 100%; /* Ensure image fits within its container */
   height: 80vh;
-}
-
-.image-container img {
-  max-width: 100%; /* Ensure image fits within its container */
   opacity: 0; /* Initially set opacity to 0 */
   animation: fadeIn 4s ease-in-out forwards; /* Apply fade-in animation */
 }
@@ -33,4 +29,24 @@ body {
     opacity: 1; /* Fade to fully opaque */
     transform: scale(1.1); /* Final scale, adjust as needed */
   }
+}
+
+/* Define custom button styles */
+.custom-button {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #e49375; /* Choose a color that matches the website theme */
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 2rem;
+}
+
+/* Hover effect */
+.custom-button:hover {
+  background-color: #ff6347; /* Darken the color on hover */
 }
