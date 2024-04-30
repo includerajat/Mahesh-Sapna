@@ -1,0 +1,44 @@
+body {
+  font-family: 'Waiting for the Sunrise', cursive; 
+  font-size:30px; 
+  margin: 10px 50px; 
+  letter-spacing: 6px; 
+  font-weight: bold;
+  text-align: center;
+  background-color: #FDE0DD ;
+}
+
+.youtube-embed {
+  margin-top: 2rem;
+  position: relative;
+  padding-bottom: 56%;
+  width: 100%;
+  text-align: left;
+}
+
+.youtube-embed iframe {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Define custom button styles */
+.custom-button {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #e49375; /* Choose a color that matches the website theme */
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 2rem;
+}
+
+/* Hover effect */
+.custom-button:hover {
+  background-color: #ff6347; /* Darken the color on hover */
+}
