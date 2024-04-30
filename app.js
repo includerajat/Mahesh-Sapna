@@ -1,7 +1,9 @@
 // set up text to print, each item in array is new line
 var aText = new Array(
-  "There are only 10 types of people in the world:", 
-  "Those who understand binary, and those who don't"
+  "Shaadi Ki bhaut bhaut badhaiyaan...", 
+  "Agr bhabhi ji, app isko padh rahe ho to, hum sab yahi kahenge ki ..",
+  "Aap bhaut lucky ho, kyuki app ko Mahesh jaisa life partner mila hai ..",
+  "Waise hum bhi bhaut ache hai, dekh lena, kahi kuch refer kar sko to :))"
   );
   var iSpeed = 100; // time delay of print out
   var iIndex = 0; // start printing array at this posision
@@ -36,3 +38,8 @@ var aText = new Array(
   
   
   typewriter();
+
+  setTimeout(() => {
+    const button = document.querySelector('.custom-button');
+    button.style.display = 'inline';
+  },aText.join('').length * iSpeed + 2000)

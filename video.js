@@ -36,3 +36,13 @@ var aText = new Array(
   
   
   typewriter();
+
+setTimeout(() => {
+  const button = document.querySelector('.custom-button');
+  button.style.display = 'inline';
+},aText.join('').length * iSpeed + 20000)
+
+setTimeout(() => {
+  const video = document.querySelector('.youtube-embed');
+  video.style.display = 'block';
+},aText.join('').length * iSpeed + 1000)

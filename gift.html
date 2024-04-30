@@ -91,12 +91,41 @@
   color: #585858;
   text-decoration: none;
 }
+
+/* Define custom button styles */
+.custom-button {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #e49375; /* Choose a color that matches the website theme */
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 2rem;
+}
+
+/* Hover effect */
+.custom-button:hover {
+  background-color: #ff6347; /* Darken the color on hover */
+}
+
+a {
+  text-decoration: none; /* Remove underline from links */
+  color: #fff; /* Set link color to match the website theme */
+}
+
+a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
   </style>
 </head>
 <body>
   <div id="typedtext"></div>
-  <div class="wrapper">
-    <a href="#demo-modal">Read above message first</a>
+  <div  class="wrapper">
+    <a style="cursor: not-allowed;" >Read above message first</a>
 </div>
 
 <div id="demo-modal" class="modal">
@@ -109,6 +138,11 @@
 
         <a href="#" class="modal__close">&times;</a>
     </div>
+</div>
+<div>
+  <button class="custom-button" style="display: none;">
+    <a href="./index.html">Back to home</a>
+  </button>
 </div>
 <script>
   // set up text to print, each item in array is new line
@@ -151,7 +185,11 @@ var aText = new Array(
   setTimeout(() => {
     const content = document.querySelector('a')
     content.textContent = '❤️ Click Me ❤️'
-  }, 12000);
+    content.style.cursor = 'pointer';
+    content.setAttribute('href', '#demo-modal');
+    const button = document.querySelector('.custom-button');
+    button.style.display = 'inline';
+  }, aText.join('').length * iSpeed + 2000);
   
   
   typewriter();

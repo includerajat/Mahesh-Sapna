@@ -42,3 +42,13 @@ body {
 .custom-button:hover {
   background-color: #ff6347; /* Darken the color on hover */
 }
+
+a {
+  text-decoration: none; /* Remove underline from links */
+  color: #fff; /* Set link color to match the website theme */
+}
+
+a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
